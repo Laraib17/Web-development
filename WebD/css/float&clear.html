@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float&clear</title>
+    <!-- The CSS float property specifies how an element should float.
+         The CSS clear property specifies what elements can float beside the cleared element and on which side.
+
+ -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Audiowide", sans-serif;
+        }
+
+        .outside {
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            margin: 33px auto;
+        }
+
+        .inside {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 238, 238);
+        }
+
+        #fruit {
+            float: right;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            clear: left;
+            width: 100%;
+        }
+
+        p, h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outside">
+        <h1> Welcome to my store </h1>
+        <div id="fruit" class="inside">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime soluta necessitatibus eos ex, hic laudantium expedita quae ipsa ipsum quo architecto! Id dicta eveniet voluptatibus earum accusamus sit, sed soluta.</p>
+        </div>
+        <div id="computer" class="inside">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aspernatur ipsa laudantium magnam dicta veritatis assumenda nobis, beatae, dolor ratione deserunt consequatur, dolore temporibus possimus. Quisquam eligendi laboriosam architecto laborum.</p>
+        </div>
+        <div id="stationary" class="inside">
+            <h3>Stationary</h3>
+            <p id="stationary" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus vel nulla fuga qui accusamus ullam, exercitationem corporis dolorum animi voluptate sapiente ex magni rerum numquam error ut quae explicabo?</p>
+        </div>
+        <div id="glasses" class="inside">
+            <h3>Stationary</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos, inventore ab beatae amet aliquam quis debitis obcaecati ea voluptatum omnis libero, nulla rem possimus optio autem laborum. Quos, repudiandae!</p>
+        </div>
+    </div>
+</body>
+
+</html>

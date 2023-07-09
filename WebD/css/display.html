@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        header{
+            border: 2px solid red;
+        }
+        /* You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins */
+        /* block and inline can be used in different elements to work as specified either as block(only width specified is used) or inline(uses whole space) */
+        img{
+            margin: auto;
+            display: block;
+            width: 150px;
+        }
+        /* text align center will center your element to center */
+        h3{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 6px;
+        }
+        /* 1."Inline-block "places elemnts into horizontal blocks and "block" will place it into vertical blocks
+           2.border-box: it places your text in box and keeps the width, margin and padding as */
+        .second{
+            border: 2px solid blueviolet;
+            background-color: crimson;
+            margin: 4px;
+            padding: 20 px;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 30%;
+        }    
+    </style>
+</head>
+<body>
+    <header class="first">
+        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg" alt="img">
+        <h3>shout out "BLOG OR WOT"</h3>
+    </header>
+    <div class="inside">
+        <div class="second">
+            <h4 class="third">heading1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, nostrum repellat accusamus consequatur non tempore, aut ea velit libero ex nam ullam praesentium minima, cupiditate modi repudiandae quaerat itaque repellendus.</p>
+        </div>
+        <div class="second">
+            <h4 class="third">heading2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, nostrum repellat accusamus consequatur non tempore, aut ea velit libero ex nam ullam praesentium minima, cupiditate modi repudiandae quaerat itaque repellendus.</p>
+        </div>
+        <div class="second">
+            <h4 class="third">heading3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, nostrum repellat accusamus consequatur non tempore, aut ea velit libero ex nam ullam praesentium minima, cupiditate modi repudiandae quaerat itaque repellendus.</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
