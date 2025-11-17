@@ -24,3 +24,11 @@ document.getElementById("studentForm").addEventListener("submit", function (e) {
       // Reset the form (optional)
       //this.reset();
     });
+    const bulbImage = document.getElementById("bulbImage");
+    bulbImage.addEventListener("click", ()=>{
+      if(bulbImage.style.color === "yellow"){
+        bulbImage.style.color = "grey";
+        } else{
+          bulbImage.style.color = "yellow";
+        }
+    });
