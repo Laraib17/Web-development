@@ -25,7 +25,8 @@ document.getElementById("studentForm").addEventListener("submit", function (e) {
       //this.reset();
     });
     const bulbImage = document.getElementById("bulbImage");
-    bulbImage.addEventListener("click", ()=>{
+    const toggleButton = document.getElementById("toggle_bulb");
+    toggleButton.addEventListener("click", ()=>{
       if(bulbImage.style.color === "yellow"){
         bulbImage.style.color = "grey";
         } else{
