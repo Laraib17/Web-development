@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation menu</title>
+    <style>
+        .nav1{
+            background-color: rgb(197, 150, 241);
+            color: slateblue;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .nav1 ul{
+            overflow: auto;
+        }
+        /* To show color change of link after visiting side */
+        .nav1 li a:visited{
+            color: red;
+        }
+        /* To change color of the link while hovering cursor over it */
+        .nav1 li a:hover{
+            color: black;
+        }
+        /* float is used to shift the whole block to the directed site */
+        .nav1 li{
+            float: left;
+            list-style: none;
+        }
+        .nav1 li a{
+            padding: 50px;
+            color: rgb(174, 250, 167);
+        }
+        .search{
+            float: right;
+            border: solid 2px red;
+            border-radius: 4px;
+            padding: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav1">
+            <ul>
+                <li><a href="/html/id&classes.html">id&classes</a> </li>
+                <li><a href="/html/inline&block.html">inline blocks</a></li>
+                <li><a href="/html/links.html">links</a> </li>
+                <li><a href="/html/entities&sementicTag.html">Entities&semantic</a> </li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

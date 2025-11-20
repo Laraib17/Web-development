@@ -1,0 +1,10 @@
+body {
+    background-color: blanchedalmond;
+}
+
+#form_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
